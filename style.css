@@ -1,0 +1,30 @@
+.fisrtcover{
+    background-image:url(./img/romance-2258599_1920.jpg) ;
+    background-repeat: no-repeat;
+
+    background-position: center center;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    border-top: 100000%;
+    border-top: auto;
+    /* margin-top: 50px; */
+    height: 800px;
+     color: white;
+    }
+.toplorem{
+    font-size: 200%;
+}
+.topbtn{
+    margin-left: 20%;
+}
+
+.secdiv{
+    background-color: rgb(122, 221, 252);
+    width:90%;
+}
+ .shadow-primary {
+        box-shadow: 2px 2px 20px #2626ad;
+      }
