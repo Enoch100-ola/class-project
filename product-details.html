@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E Shop 📦📦</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+
+    <style>
+      .shadow-primary {
+        box-shadow: 2px 2px 20px #2626ad;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Product details</h1>
+    <div id="product"></div>
+    <script src="data.js"></script>
+    <script>
+      let product = document.getElementById('product');
+      let id = parseInt(window.location.href.split('=')[1]);
+
+      let productItem = phoneList.find((element, elementId) => {
+        if (id === elementId) {
+          return element;
+        }
+      });
+
+      // if product does not exist
+      if (!productItem) {
+        product.innerHTML = `
+            <h1>404</h1>
+          `;
+      } else {
+        product.innerHTML = `
+            <h5>${productItem.name}</h5>
+            <img src="${productItem.imageUrl}"><br>
+            <span>${productItem.quantity}</span><br>
+            <span>${productItem.date}</span>
+        `;
+      }
+    </script>
+  </body>
+</html>
