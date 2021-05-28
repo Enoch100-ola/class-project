@@ -16,8 +16,31 @@
   <body>
     <h1>Product details</h1>
     <div id="product"></div>
+
+    <form action="">
+      <input type="text" id="name"/> <br>
+      <input type="text" id="color"/> <br>
+      <textarea name="" id="description" rows="10"></textarea>
+      <button>Submit</button>
+
+    </form>
+
     <script src="data.js"></script>
     <script>
+      
+      let form = document.form[0];
+      let color = document.getElementById('color'),
+        name = document.querySelector("name"),
+        description = document.querySelector('#description');
+      
+      form.addEventListener('submit', (event) => {
+        let newData = {
+          name: name.value,
+          color: color.value,
+          description: description.value,
+        }
+      });
+
       let product = document.getElementById('product');
       let id = parseInt(window.location.href.split('=')[1]);
 

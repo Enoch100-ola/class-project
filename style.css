@@ -14,9 +14,7 @@
     height: 800px;
      color: white;
     }
-.toplorem{
-    font-size: 200%;
-}
+
 .topbtn{
     margin-left: 20%;
 }
@@ -28,3 +26,35 @@
  .shadow-primary {
         box-shadow: 2px 2px 20px #2626ad;
       }
+.sprgg{
+    color: rgb(226, 176, 176);
+    font-size: 200%;
+    margin-left: 5%;
+    
+}
+.sprg{
+    color: red;
+    font-size: 200%;
+    margin-left: 60%;
+    
+}
+.sprgs{
+    color: rgb(196, 77, 30);
+    font-size: 200%;
+    margin-left: 60%;
+    
+}
+.sprgss{
+    color: rgb(136, 32, 32);
+    font-size: 200%;
+    margin-left: 60%;
+}
+#circle {
+  width: 250px;
+  height: 250px;
+  background: red;
+  border-radius: 60%
+}
+.percen{
+    margin-left: 20% ;
+}
